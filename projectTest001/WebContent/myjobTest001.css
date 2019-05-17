@@ -1,0 +1,417 @@
+@charset "EUC-KR";
+
+:root {
+	
+}
+
+body {
+	background-color: #FFFFFF;
+	margin-right: 20%;
+	margin-left: 20%;
+}
+/*중간 화면에 대한 css*/
+.project-img {
+	border-radius: 0;
+	margin: auto;
+	display: inline-block;
+	float: left;
+}
+
+.img-block {
+	display: inline-block;
+}
+
+td {
+	padding: 0px 10px 0px 10px;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.project-info {
+	border-radius: 0;
+	margin: 10px auto;
+	display: inline-block;
+	float: left;
+}
+
+.text {
+	font-size: 20px;
+}
+
+.project-div {
+	font-size: 30px;
+	align-content: center;
+}
+
+.funding-box {
+	border: 2px solid blue;
+	width: 350px;
+	padding: 10px 10px 10px 5px;
+}
+
+.funding-text {
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.funding-info {
+	font-size: 15px;
+}
+
+.card-title {
+	text-transform: uppercase;
+	color: #E44424;
+}
+
+.card-text {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+.my-hr3 {
+	border: 1;
+	height: 3px;
+	background: #ccc;
+	margin: 0px;
+}
+
+/*버튼에 관한 css*/
+.btn-label {
+	position: relative;
+	left: -12px;
+	display: inline-block;
+	padding: 6px 12px;
+	background: rgba(0, 0, 0, 0.15);
+	border-radius: 3px 0 0 3px;
+}
+
+.btn-labeled {
+	height: 50px;
+	width: 200px;
+	padding-top: 0px;
+	padding-bottom: 0;
+}
+
+.btn {
+	margin-bottom: 10px;
+}
+
+/*동적 메뉴*/
+.jbFixed {
+	position: fixed;
+	top: 0px;
+}
+
+.jbMenu {
+	text-align: center;
+	background-color: white;
+	padding: 10px 0px;
+	width: 930px;
+	height: 50px;
+	margin: 0px 0px 0px 100px;
+}
+
+.jbMenu a {
+	text-decoration: none;
+}
+
+.jbContent {
+	height: 2000px;
+}
+
+/*메뉴에 관한 css*/
+.top-line {
+	background-color: #1EDDFF; /*메뉴 배경화면 */
+	position: relative;
+	height: 65px;
+}
+
+.top-line .logo {
+	padding-left: 25px;
+	left: 0;
+	display: inline-block;
+	position: absolute;
+	line-height: 55px;
+}
+
+.top-line .logo a {
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.top-line .logo a:hover {
+	text-decoration: none;
+	color: black;
+}
+
+.main-menu {
+	padding: 0 130px;
+	width: 100%;
+	text-align: center;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.main-menu a.active {
+	color: #fff;
+}
+
+.main-menu a:hover {
+	color: black;
+}
+
+.main-menu a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 20px;
+	padding: 0 15px;
+	line-height: 60px;
+	display: inline-block;
+	transition: color .25s ease, background-color .25s ease;
+}
+
+.login-btn { /*메뉴 오른쪽*/
+	font-weight: bold;
+	position: absolute;
+	padding-right: 25px;
+	padding-left: 10px;
+	right: 0;
+	font-style: italic;
+	color: black;
+	line-height: 60px;
+	cursor: pointer;
+	transition: color .25s ease;
+}
+
+.login-btn a {
+	font-size: 20px;
+	color: white;
+}
+
+.login-btn a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+.phone i {
+	padding-right: 10px;
+	font-size: 20px;
+}
+
+@media ( max-width : 575.98px) { /*반응형 웹 width의 값만클 될때 아래부분만 나오기*/
+	.top-line .logo {
+		padding-left: 5px;
+	}
+	.top-line .login-btn {
+		display: none;
+	}
+	.top-line .mobile-menu-btn {
+		padding-right: 5px;
+		display: block;
+		text-align: right;
+		font-size: 20px;
+		line-height: 55px;
+	}
+	.main-menu {
+		padding: 0 30px;
+	}
+}
+
+@media ( max-width : 1199.98px) {
+	.main-menu {
+		display: none;
+	}
+	.mobile-menu-btn {
+		display: block;
+	}
+}
+/* 스토리 / 커뮤니티 / 환불 메뉴 내용 */
+.jbMenu ul {
+	position: absolute;
+	left: auto;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.jbMenu ul li {
+	list-style: none;
+}
+
+.jbMenu ul li a {
+	text-decoration: none;
+	position: relative;
+	display: block;
+	text-align: center;
+	margin: 0 25px;
+	color: #262626;
+	font-size: 30x;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: .5s;
+	padding: 5px 10px;
+}
+
+.jbMenu ul li a:hover {
+	color: #fff;
+	background: #e91e63;
+	text-decoration: none;
+}
+
+.jbMenu ul li a:visited {
+	color: black;
+	background: #e91e63;
+}
+
+.jbMenu ul li a:active {
+	color: yellow;
+	background: #e91e63;
+}
+
+.jbMenu ul li a:before {
+	content: '';
+	position: absolute;
+	bottom: 12px;
+	left: 12px;
+	width: 12px;
+	height: 12px;
+	border: 3px solid #e91e63;
+	border-width: 0 0 3px 3px;
+	transition: .5s;
+	opacity: 0;
+}
+
+.jbMenu ul li a:after {
+	content: '';
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	width: 12px;
+	height: 12px;
+	border: 3px solid #e91e63;
+	border-width: 3px 3px 0 0;
+	transition: .5s;
+	opacity: 0;
+}
+
+.jbMenu ul li a:hover:before {
+	bottom: -12px;
+	left: -12px;
+	opacity: 1;
+}
+
+.jbMenu ul li a:hover:after {
+	top: -12px;
+	right: -12px;
+	opacity: 1;
+}
+
+/* 스토리 / 커뮤니티 / 환불 메뉴 전체 */
+.story {
+	padding: 10px 10px 0px 135px;
+	display: inline-block;
+}
+
+/* 스토리텔링과 펀드 구성 나누기 */
+/* 왼쪽 */
+.story-text {
+	border: 1px solid gray;
+	width: 500px;
+	margin-right: 10px;
+	float: left;
+	box-sizing: border-box;
+}
+/* 오른쪽 */
+.fund-text {
+	width: 370px;
+	margin-left: 10px;
+	padding: 10px;
+	float: right;
+	box-sizing: border-box;
+	display: block;
+}
+
+/*방명록*/
+.user-row {
+	margin-bottom: 14px;
+}
+
+.user-row:last-child {
+	margin-bottom: 0;
+}
+
+.dropdown-user { /* 화살표 */
+	margin: 13px 0;
+	padding: 0px 5px 0px 30px;
+}
+
+.dropdown-user:hover {
+	cursor: pointer;
+}
+
+.table-user-information>tbody>tr {
+	border-top: 1px solid rgb(221, 221, 221);
+}
+
+.table-user-information>tbody>tr:first-child {
+	border-top: 0;
+}
+
+.table-user-information>tbody>tr>td {
+	border-top: 0;
+}
+
+.text-info {
+	padding-left: 80px;
+	padding-top: 5px;
+}
+
+.well {
+	min-height: 20px;
+	width: 500px;
+	max-width: 500px;
+	background-color: #f5f5f5;
+	border-radius: 4px;
+	padding: 5px 10px 5px 5px;
+	margin: 0px;
+}
+
+.img-test {
+	position: relative;
+	min-height: 1px;
+	width: 80px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.img-circle {
+	float: left;
+	width: 100px;
+	height: 80px;
+	border-radius: 50%;
+}
+
+.div-test {
+	display: block;
+}
+
+.panel-head{
+	color: #fff;
+    background-color: #428bca;
+    border-color: #428bca;
+	padding: 0px 10px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
