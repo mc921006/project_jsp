@@ -11,10 +11,10 @@ $(document).ready(function() {
 	//스크롤이 발생하면 함수를 실행
 	$(window).scroll(function() {
 		//문서의 스크롤바 위치가 메뉴의 수직 위치보다 아래라면
-		if ($(document).scrollTop() > jbOffset.top) {
+		if ($(document).scrollTop()  > jbOffset.top) {
 			//메뉴에 jbFixed 클래스를 추가하여 고정
 			$('.jbMenu').addClass('jbFixed');
-		} else {
+		}else {
 			//아니면 제거
 			$('.jbMenu').removeClass('jbFixed');
 		}

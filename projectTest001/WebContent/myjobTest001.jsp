@@ -78,13 +78,13 @@
 				</button></td>
 		</tr>
 	</table>
-	<div class="jbMenu">
+	<div class="jbMenu" style="z-index: 1;" >
 		<ul>
 			<li><a href="myjobunder.jsp">스토리</a></li>
 			<li><a href="myjobunder2.jsp">커뮤니티</a></li>
 			<li><a href="myjobunder3.jsp">환불 및 정책</a></li>
 		</ul>
+		<hr class="my-hr3">
 	</div>
-	<hr class="my-hr3">
 </section>
 

@@ -78,6 +78,7 @@ table {
 	height: 3px;
 	background: #ccc;
 	margin: 0px;
+	margin-top: 30px;
 }
 
 /*버튼에 관한 css*/
@@ -97,6 +98,26 @@ table {
 	padding-bottom: 0;
 }
 
+.btn-gift {
+	position: relative;
+	left: -12px;
+	display: inline-block;
+	padding: 6px 0px;
+	background: rgba(0, 0, 0, 0.15);
+	border-radius: 3px 0 0 3px;
+}
+
+.btn-gifted {
+	height: 30px;
+	width: 150px;
+	padding-top: 0px;
+	padding-bottom: 0;
+}
+
+.btn-gift-set {
+	padding : 5px 20px 0px 0px;
+}
+
 .btn {
 	margin-bottom: 10px;
 }
@@ -110,9 +131,9 @@ table {
 .jbMenu {
 	text-align: center;
 	background-color: white;
-	padding: 10px 0px;
+	padding: 10px 0px 0px 0px;
 	width: 930px;
-	height: 50px;
+	height: 40px;
 	margin: 0px 0px 0px 100px;
 }
 
@@ -295,7 +316,7 @@ table {
 .jbMenu ul li a:after {
 	content: '';
 	position: absolute;
-	top: 12px;
+	top: 12px; /*화살표 크기*/
 	right: 12px;
 	width: 12px;
 	height: 12px;
@@ -305,15 +326,15 @@ table {
 	opacity: 0;
 }
 
-.jbMenu ul li a:hover:before {
-	bottom: -12px;
-	left: -12px;
+.jbMenu ul li a:hover:before { /*화살표 벌어지는 크기*/
+	bottom: -8px;
+	left: -8px;
 	opacity: 1;
 }
 
 .jbMenu ul li a:hover:after {
-	top: -12px;
-	right: -12px;
+	top: -8px;
+	right: -8px;
 	opacity: 1;
 }
 
@@ -329,8 +350,18 @@ table {
 	border: 1px solid gray;
 	width: 500px;
 	margin-right: 10px;
+	margin-top : 10px;
+	background-color: #f5f5f5;
 	float: left;
 	box-sizing: border-box;
+}
+
+.story-div-text {
+	padding: 5px;
+}
+
+.refund-text {
+	padding: 5px;
 }
 /* 오른쪽 */
 .fund-text {
@@ -406,12 +437,12 @@ table {
 	display: block;
 }
 
-.panel-head{
+.panel-head {
 	color: #fff;
-    background-color: #428bca;
-    border-color: #428bca;
+	background-color: #428bca;
+	border-color: #428bca;
 	padding: 0px 10px;
-    border-bottom: 1px solid transparent;
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
+	border-bottom: 1px solid transparent;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
 }

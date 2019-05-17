@@ -20,7 +20,7 @@
 		<div class="story-text">
 			<div class="well">
 				<div class="user-row">
-					<div class="div-test">
+					<div class="div-test" style="z-index: 2;">
 						<div class="img-test">
 							<img class="img-circle" src="img/no.png" alt="User Pic">
 						</div>

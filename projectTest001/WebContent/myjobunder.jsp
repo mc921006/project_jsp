@@ -18,7 +18,9 @@
 	<%@include file="myjobTest001.jsp"%>
 
 	<div class="story">
-		<div class="story-text">스토리 / 커뮤니티 / 환불 및 정책</div>
+		<div class="story-text">
+			<div class="story-div-text" style="height: 1500px;">스토리는 스마트 에디터를 통해 저장된 스토리들을 넣어 두는 곳</div>
+		</div>
 		<div class="fund-text">
 			<%@include file="myjobside.jsp"%>
 		</div>
