@@ -112,7 +112,7 @@ table {
 	background-color: white;
 	padding: 10px 0px;
 	width: 930px;
-	height: 23px;
+	height: 50px;
 	margin: 0px 0px 0px 100px;
 }
 
@@ -141,15 +141,21 @@ table {
 
 .top-line .logo a {
 	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.top-line .logo a:hover {
+	text-decoration: none;
+	color: black;
 }
 
 .main-menu {
 	padding: 0 130px;
 	width: 100%;
 	text-align: center;
-}
-
-.main-menu {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
@@ -320,20 +326,92 @@ table {
 /* 스토리텔링과 펀드 구성 나누기 */
 /* 왼쪽 */
 .story-text {
+	border: 1px solid gray;
 	width: 500px;
-	height : 1500px;
-	margin-right : 10px;
+	margin-right: 10px;
 	float: left;
 	box-sizing: border-box;
-	background: #ff0;
 }
 /* 오른쪽 */
 .fund-text {
 	width: 370px;
-	margin-left : 10px;
-	padding : 10px;
+	margin-left: 10px;
+	padding: 10px;
 	float: right;
 	box-sizing: border-box;
-	background: #0ff;
 	display: block;
+}
+
+/*방명록*/
+.user-row {
+	margin-bottom: 14px;
+}
+
+.user-row:last-child {
+	margin-bottom: 0;
+}
+
+.dropdown-user { /* 화살표 */
+	margin: 13px 0;
+	padding: 0px 5px 0px 30px;
+}
+
+.dropdown-user:hover {
+	cursor: pointer;
+}
+
+.table-user-information>tbody>tr {
+	border-top: 1px solid rgb(221, 221, 221);
+}
+
+.table-user-information>tbody>tr:first-child {
+	border-top: 0;
+}
+
+.table-user-information>tbody>tr>td {
+	border-top: 0;
+}
+
+.text-info {
+	padding-left: 80px;
+	padding-top: 5px;
+}
+
+.well {
+	min-height: 20px;
+	width: 500px;
+	max-width: 500px;
+	background-color: #f5f5f5;
+	border-radius: 4px;
+	padding: 5px 10px 5px 5px;
+	margin: 0px;
+}
+
+.img-test {
+	position: relative;
+	min-height: 1px;
+	width: 80px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.img-circle {
+	float: left;
+	width: 100px;
+	height: 80px;
+	border-radius: 50%;
+}
+
+.div-test {
+	display: block;
+}
+
+.panel-head{
+	color: #fff;
+    background-color: #428bca;
+    border-color: #428bca;
+	padding: 0px 10px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
 }

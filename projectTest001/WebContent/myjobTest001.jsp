@@ -7,25 +7,9 @@
 	rel="stylesheet" id="bootstrap-css">
 <script
 	src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<link rel="stylesheet" href="myjobTest001.css">
-<script>
-	$(document).ready(function() {
-		//메뉴의 위치를 파악
-		var jbOffset = $('.jbMenu').offset();
-		//스크롤이 발생하면 함수를 실행
-		$(window).scroll(function() {
-			//문서의 스크롤바 위치가 메뉴의 수직 위치보다 아래라면
-			if ($(document).scrollTop() > jbOffset.top) {
-				//메뉴에 jbFixed 클래스를 추가하여 고정
-				$('.jbMenu').addClass('jbFixed');
-			} else {
-				//아니면 제거
-				$('.jbMenu').removeClass('jbFixed');
-			}
-		});
-	});
-</script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script> 
+<script type="text/javascript" src="myjobTest001.js"></script> <!-- js파일을 쓰기 위한 -->
+<link rel="stylesheet" href="myjobTest001.css"> <!-- css파일을 쓰기 위한 -->
 <!------ Include the above in your HEAD tag ---------->
 <!-- 메뉴 바 -->
 <header class="top-line">
@@ -49,7 +33,9 @@
 		<tr>
 			<td rowspan="6"><div class="project-img">
 					<div class="img-block">
-						<img class="w-100" src="https://via.placeholder.com/500x450">
+						<img class="w-100" style="width: 500; height: 450;" 
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEKKJpY4SL1uRXNDDR_5se9yi88XfcpIkYZaTjMQix9SAIwdypgw">
+						<!-- <img class="w-100" src="https://via.placeholder.com/500x450"> -->
 					</div>
 				</div></td>
 		</tr>
@@ -94,55 +80,11 @@
 	</table>
 	<div class="jbMenu">
 		<ul>
-			<li><a href="myjobTest001.jsp">스토리</a></li>
-			<li><a href="myjobTest002.jsp">커뮤니티</a></li>
-			<li><a href="myjobTest003.jsp">환불 및 정책</a></li>
+			<li><a href="myjobunder.jsp">스토리</a></li>
+			<li><a href="myjobunder2.jsp">커뮤니티</a></li>
+			<li><a href="myjobunder3.jsp">환불 및 정책</a></li>
 		</ul>
 	</div>
 	<hr class="my-hr3">
 </section>
-<div class="story">
-	<div class="story-text">스토리 / 커뮤니티 / 환불 및 정책</div>
-	<div class="fund-text">
-		창작자 소개
-		<div>team goodbam/기획,작사: 이드니 작곡:임준우, 보컬 :정성진, 뮤비:이건우 디자인: 펜낙
-			/문의는 insta: good_bam_project</div><br/>
-		<hr>
-		선택할 수 있는 선물이 n개 있습니다.
-		<div style="border: 1px solid;">
-			<h3>10,000 원</h3>
-			선물 이름 / 배송비 포함.
-			<ul>
-				<li>승진이1</li>
-				<li>승진이2</li>
-				<li>승진이3</li>
-				<li>승진이4</li>
-			</ul>
-			예상 전달일 : 0000년 00월 00일
-		</div>
-		<br/>
-		<div style="border: 1px solid;">
-			<h3>20,000 원</h3>
-			선물 이름 / 배송비 포함.
-			<ul>
-				<li>11</li>
-				<li>22</li>
-				<li>33</li>
-				<li>44</li>
-			</ul>
-			예상 전달일 : 0000년 00월 00일
-		</div>
-		<br/>
-		<div style="border: 1px solid;">
-			<h3>30,000 원</h3>
-			선물 이름 / 배송비 포함.
-			<ul>
-				<li>111</li>
-				<li>222</li>
-				<li>333</li>
-				<li>444</li>
-			</ul>
-			예상 전달일 : 0000년 00월 00일
-		</div>
-	</div>
-</div>
+
