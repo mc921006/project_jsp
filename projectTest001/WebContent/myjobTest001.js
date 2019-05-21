@@ -11,7 +11,10 @@ $(document).ready(function() {
 	//스크롤이 발생하면 함수를 실행
 	$(window).scroll(function() {
 		//문서의 스크롤바 위치가 메뉴의 수직 위치보다 아래라면
+Updated upstream
 		if ($(document).scrollTop() > jbOffset.top) {
+		if ($(document).scrollTop()+10 > jbOffset.top) {
+Stashed changes
 			//메뉴에 jbFixed 클래스를 추가하여 고정
 			$('.jbMenu').addClass('jbFixed');
 		} else {
@@ -48,7 +51,6 @@ $(document).ready(function() {
         })
     });
 
-
     $('[data-toggle="tooltip"]').tooltip();
 
     $('button').click(function(e) {
@@ -56,3 +58,15 @@ $(document).ready(function() {
         alert("This is a demo.\n :-)");
     });
 });
+
+
+/* 방명록 내용*/
+function checkInputs() {
+	frm = document.postFrm;
+	if(frm.contents.value==""){
+		alert("내용을 입력해 주세요.");
+		frm.contents.focus();
+		return;
+	}
+	frm.submit();
+}

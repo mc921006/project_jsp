@@ -105,6 +105,7 @@ table {
 .jbFixed {
 	position: fixed;
 	top: 0px;
+	width: 100%;
 }
 
 .jbMenu {
@@ -379,12 +380,12 @@ table {
 
 .well {
 	min-height: 20px;
-	width: 500px;
+	width: 480px;
 	max-width: 500px;
 	background-color: #f5f5f5;
 	border-radius: 4px;
 	padding: 5px 10px 5px 5px;
-	margin: 0px;
+	margin: 10px;
 }
 
 .img-test {
@@ -411,7 +412,47 @@ table {
     background-color: #428bca;
     border-color: #428bca;
 	padding: 0px 10px;
+<<<<<<< Updated upstream
     border-bottom: 1px solid transparent;
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
+=======
+	border-bottom: 1px solid transparent;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+}
+
+/*방명록 후원자가 아닐때*/
+.inforide {
+  box-shadow: 1px 2px 8px 0px #f1f1f1;
+  background-color: white;
+  border-radius: 8px;
+  height: 50px;
+  width: 480px;
+  margin: 10px 0px 0px 10px;
+}
+
+.rideone img {
+	margin-top: -25px
+}
+
+.rideone {
+	background-color: #a0a2a1;
+	padding-top: 25px;
+	border-radius: 8px 0px 0px 8px;
+	text-align: center;
+	height: 50px;
+	margin-left: 15px;
+}
+.fontsty {
+	margin-right: -15px;
+}
+
+.fontsty h4 {
+	color: #6E6E6E;
+	font-size: 20px;
+	margin-top: 15px;
+	text-align: center;
+	margin-right: 30px;
+>>>>>>> Stashed changes
 }

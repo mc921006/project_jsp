@@ -13,7 +13,6 @@
 	rel="stylesheet" id="bootstrap-css">
 <script
 	src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="myjobTest001.css">
 <body>
 	<%@include file="myjobTest001.jsp"%>
 

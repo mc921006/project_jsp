@@ -1,3 +1,6 @@
+<%@page import="myjobTest001.MemberBean"%>
+<%@page import="java.util.Vector"%>
+<%@page import="myjobTest001.MemberMgr"%>
 <%@ page contentType="text/html; charset=EUC-KR"%>
 <%
 	request.setCharacterEncoding("EUC-KR");
@@ -18,6 +21,33 @@
 	<%@include file="myjobTest001.jsp"%>
 	<div class="story">
 		<div class="story-text">
+			<!-- 방명록 쓰기 시작 -->
+			<%
+					MemberBean mBean = mgr.getMember(ek); //후원자 확인
+					 if(mBean.getPatronrank() == 0){ //후원자가 아니면
+			%>
+				<div class="inforide">
+					<div style="margin-left: -15px">
+						<div class="col-lg-3 col-md-4 col-sm-4 col-4 rideone">
+							<img src="img/nopatron.png">
+						</div>
+						<div class="col-lg-9 col-md-8 col-sm-8 col-8 fontsty">
+							<h4>후원자만 글을 쓸 수 있습니다.</h4>
+						</div>
+					</div>
+				</div>
+			<%} else { //후원자 %> 
+			<div>
+				<label style="margin: 5px 0px 0px 5px"><%=mBean.getEmail()%> 어서오세요</label>
+				<textarea id="comment" rows="5" style="width: 480px; margin: 10px;"></textarea>
+			</div>
+			<div align="right" style="margin-right: 10px">
+				<button type="submit" class="btn btn-primary" onclick="javascript:checkInputs()">입력하기</button>
+			</div>
+			<%} %>
+			<!-- 방명록 쓰기 끝 -->
+			<!-- 방명록 리스트 시작 -->
+			<%if(vlist.isEmpty()) %>
 			<div class="well">
 				<div class="user-row">
 					<div class="div-test">
@@ -30,8 +60,9 @@
 								수가 있습니다.</span>
 						</div>
 					</div>
+						<!-- 방명록 리스트 끝 -->
 					<div class="dropdown-user" data-for=".cyruxx">
-						<!-- 버튼 화살표 -->
+						<!-- 버튼 -->
 						<i class="glyphicon glyphicon-comment"></i> 댓글
 					</div>
 					<hr style="border: 1px solid;">
